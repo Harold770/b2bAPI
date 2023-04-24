@@ -9,6 +9,7 @@
     "nodemon": "^2.0.22"
   },
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "build": "node src/index.js"
   }
 }
