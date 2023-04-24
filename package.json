@@ -12,5 +12,11 @@
     "dev": "nodemon src/index.js",
     "build": "node src/index.js",
     "start": "node src/index.js"
+  },
+  "deploy": {
+    "startCommand": "echo starting!",
+    "healthcheckPath": "/",
+    "healthcheckTimeout": 100,
+    "restartPolicyType": "never"
   }
 }
