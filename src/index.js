@@ -1,6 +1,7 @@
 const fastify = require("fastify")({ logger: true });
 const productRoutes = require("./routes/products.routes");
 const db = require("./database/mongo.db");
+const PORT = process.env.PORT || 3030;
 
 productRoutes.forEach((route ) => {
   fastify.route(route);
@@ -14,7 +15,7 @@ fastify.get("/", async (request, reply) => {
 
 const start = async () => {
   try {
-    await fastify.listen({ port: 3000, host: '0.0.0.0' });
+    await fastify.listen({ port: PORT, host: '0.0.0.0' });
   } catch (err) {
     fastify.log.error(err);
     process.exit(1);
