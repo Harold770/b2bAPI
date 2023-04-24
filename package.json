@@ -9,18 +9,6 @@
     "nodemon": "^2.0.22"
   },
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "build": "node src/index.js",
-    "start": "node src/index.js",
-    "deploy": "node src/index.js"
-  },
-  "deploy": {
-    "startCommand": "echo starting!",
-    "healthcheckPath": "/",
-    "healthcheckTimeout": 100,
-    "restartPolicyType": "never"
-  },
-  "build": {
-    "builder": "NIXPACKS"
+    "dev": "nodemon src/index.js"
   }
 }
