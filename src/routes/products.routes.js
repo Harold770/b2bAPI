@@ -37,7 +37,7 @@ const routes = [
       //     console.log(err);
       //     reply.send(err);
       //   });
-      reply.send({request: request.body});
+      reply.send(request.body);
     },
   },
 
