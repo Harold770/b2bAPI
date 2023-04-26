@@ -39,7 +39,9 @@ const routes = [
       //   });
 
       //Send Status Code
-      reply.code(200).send(request.body);
+      console.log(request.body);
+      reply.code(201).send(request.body);
+
     },
   },
 
